@@ -1,6 +1,8 @@
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Scanner;
 
 public class Intermediate_A9 {
@@ -29,15 +31,15 @@ public class Intermediate_A9 {
 */
 
 
+        Calendar y =  new GregorianCalendar();
+        int currentYear = y.get(Calendar.YEAR);
 
-        Date currentDate = new Date().getYear();
+        System.out.println(currentYear);
 
-        System.out.println(currentDate);
-
-        int calcAge = currentDate - b;
+        int calcAge = currentYear - b;
 
 
-        String result = "Your age equals";
+        String result = "Your age equals " + calcAge;
 
         return result;
     }
