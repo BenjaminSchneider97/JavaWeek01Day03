@@ -15,7 +15,7 @@ public class Intermediate_A10 {
         System.out.print("Enter the third number: ");
         int c = input.nextInt();
 
-        int avg = (a+b+c)/3;
+        double avg = (a+b+c)/3;
 
         String result = "The average of " + a + ", " + b + " and " + c + " is: " + avg;
 
