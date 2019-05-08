@@ -10,7 +10,7 @@ public class Basic_A6 {
         int a = input.nextInt();
 
         System.out.println("Is it Celsuis or Farenheit (c/f)?: ");
-        String b = input.nextLine();
+        String b = input.next();
 
         if (b.equals("c")){
             int c = a*9/5+32;
