@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Basic_A7 {
 
-    public static void main(String[] args){
-
+    public static String calcCircleArea (){
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter the radius ");
@@ -11,7 +10,15 @@ public class Basic_A7 {
 
         double calc = Math.PI * Math.pow(r, 2);
 
-        System.out.println("The area of the circle equals: " + calc);
+        String result = ("The area of the circle equals: " + calc);
+
+        return result;
+    }
+
+    public static void main(String[] args){
+
+        System.out.println(calcCircleArea());
+
 
 
     }
