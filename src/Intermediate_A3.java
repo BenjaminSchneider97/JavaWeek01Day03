@@ -15,5 +15,16 @@ public class Intermediate_A3 {
         String z = "asd";
 
         System.out.println(x.compareTo(z));
+
+        String newstring = string.replace("Alice", "Simon");
+
+        System.out.println(newstring);
+
+        String newstring2 = string.replaceAll("of", "spongebob");
+
+        System.out.println(newstring2);
+
+        String[] splitstring = string.split("a");
+
     }
 }
