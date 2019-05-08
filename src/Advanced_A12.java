@@ -16,14 +16,11 @@ public class Advanced_A12 {
         System.out.print("Enter the year of the wedding ");
         int b = input.nextInt();
 
-        int anniversaries = 0;
+        int anniversaries = 1;
 
         int difference = y - b;
 
-        if(difference % 4 == 0){
-             ++anniversaries;
-        }
-
+        anniversaries = (difference*anniversaries)/4;
 
         String result = "Anniversary count: " + anniversaries;
 
