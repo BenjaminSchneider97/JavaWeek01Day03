@@ -7,5 +7,13 @@ public class Intermediate_A3 {
         int a = string.indexOf("sister");
 
         System.out.println(a);
+
+        System.out.println(string.startsWith("was",6));
+
+        String x = "abc";
+        String y = "def";
+        String z = "asd";
+
+        System.out.println(x.compareTo(z));
     }
 }
