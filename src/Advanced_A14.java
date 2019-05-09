@@ -2,85 +2,46 @@ import java.util.Scanner;
 
 public class Advanced_A14 {
 
-    public static void main(String[] args){
+    private static String calcGrade(){
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the numbers for the subject physics: ");
-        int physics = input.nextInt();
+        String[] subjects = {"maths", "physics", "biology", "chemistry"};
 
-        System.out.print("Enter the numbers for the subject chemistry: ");
-        int chemistry = input.nextInt();
+        String result = "";
 
-        System.out.print("Enter the numbers for the subject biology: ");
-        int biology = input.nextInt();
+        for (String subject : subjects) {
 
-        System.out.print("Enter the numbers for the subject mathematics: ");
-        int mathematics = input.nextInt();
+            System.out.print("Enter the points for the subject \"" + subject + "\": ");
+            int a = input.nextInt();
 
-        System.out.print("Enter the numbers for the subject computer: ");
-        int computer = input.nextInt();
+            String grade = "test";
 
-        if(physics >= 90){
+            if (a >= 90) {
+                grade = "A";
+            } else if (a >= 80) {
+                grade = "B";
+            } else if (a >= 70) {
+                grade = "C";
+            } else if (a >= 60) {
+                grade = "D";
+            } else if (a >= 40) {
+                grade = "E";
+            } else if (a < 40) {
+                grade = "F";
+            }
 
-            String grade = "A";
-            System.out.println("Final grade in Physics: " + grade);
+            result += "Final grade in \"" + subject + "\": " + grade +"\n";
 
-        } else if (physics >= 80){
-
-            String grade = "B";
-            System.out.println("Final grade in Physics: " + grade);
-
-        } else if (physics >= 70){
-
-            String grade = "C";
-            System.out.println("Final grade in Physics: " + grade);
-
-        } else if (physics >= 60){
-
-            String grade = "D";
-            System.out.println("Final grade in Physics: " + grade);
-
-        } else if (physics >= 40){
-
-            String grade = "E";
-            System.out.println("Final grade in Physics: " + grade);
-
-        } else if (physics < 40){
-
-            String grade = "F";
-            System.out.println("Final grade in Physics: " + grade);
         }
 
-        if(chemistry >= 90){
+        return result;
 
-            String grade = "A";
-            System.out.println("Final grade in chemistry: " + grade);
+    }
 
-        } else if (chemistry >= 80){
+    public static void main(String[] args){
 
-            String grade = "B";
-            System.out.println("Final grade in chemistry: " + grade);
+        System.out.println(calcGrade());
 
-        } else if (chemistry >= 70){
-
-            String grade = "C";
-            System.out.println("Final grade in chemistry: " + grade);
-
-        } else if (chemistry >= 60){
-
-            String grade = "D";
-            System.out.println("Final grade in chemistry: " + grade);
-
-        } else if (chemistry >= 40){
-
-            String grade = "E";
-            System.out.println("Final grade in chemistry: " + grade);
-
-        } else if (chemistry < 40) {
-
-            String grade = "F";
-            System.out.println("Final grade in chemistry: " + grade);
-        }
     }
 }
